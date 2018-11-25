@@ -312,7 +312,7 @@ label-font = 4
 [module/alsa]
 type = internal/alsa
 
-format-volume = <ramp-volume> <bar-volume>
+format-volume = %{A3:pavucontrol:}<ramp-volume> <bar-volume>%{A}
 label-volume-foreground = ${colors.solarizedWhite}
 
 ramp-volume-0 = " "

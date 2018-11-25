@@ -5,11 +5,11 @@ Based on [debian-i3gaps-from-scratch](https://github.com/mmeinert/debian-i3gaps-
 
 #### Screenshots
 ##### fakebusy (neofetch / htop / ranger / cmatrix / feh)
-![screenshot-fakebusy](https://raw.githubusercontent.com/martinlatrille/dots-solarized/master/screenshot-fakebusy.png)
+![screenshot-fakebusy](https://raw.githubusercontent.com/martinlatrille/dots-solarized/master/screenshots/screenshot-fakebusy.png)
 ##### rofi
-![screenshot-rofi](https://raw.githubusercontent.com/martinlatrille/dots-solarized/master/screenshot-rofi.png)
+![screenshot-rofi](https://raw.githubusercontent.com/martinlatrille/dots-solarized/master/screenshots/screenshot-rofi.png)
 ##### dunst
-![screenshot-dunst](https://raw.githubusercontent.com/martinlatrille/dots-solarized/master/screenshot-dunst.png)
+![screenshot-dunst](https://raw.githubusercontent.com/martinlatrille/dots-solarized/master/screenshots/screenshot-dunst.png)
 
 #### Softwares:
 - **WM:** [i3-gaps](https://github.com/Airblader/i3)
