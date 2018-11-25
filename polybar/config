@@ -284,9 +284,8 @@ type = internal/network
 interface = enp0s3
 interval = 3.0
 
-format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.solarizedWhite}
-label-connected = %local_ip%
+label-connected = %{A1:dunstify %local_ip% -a module/network -u low:}%{A}
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>

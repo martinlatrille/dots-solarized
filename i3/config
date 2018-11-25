@@ -204,6 +204,11 @@ bindsym Print --release exec /home/mrtn/.config/i3/scripts/screenshot.sh
 bindsym $mod+Prior exec /home/mrtn/.config/i3/scripts/volume.sh up
 bindsym $mod+Next exec /home/mrtn/.config/i3/scripts/volume.sh down
 
+### SPOTIFY
+bindsym $mod+Home exec spotifycli --next
+bindsym $mod+End exec spotifycli --prev
+bindsym $mod+Insert exec spotifycli --playpause
+
 ### WALLPAPER
 exec_always feh --bg-scale /usr/share/wallpapers/firewatch.jpg
 
