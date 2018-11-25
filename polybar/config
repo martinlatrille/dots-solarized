@@ -284,10 +284,12 @@ type = internal/network
 interface = enp0s3
 interval = 3.0
 
-format-connected-prefix-foreground = ${colors.solarizedWhite}
-label-connected = %{A1:dunstify %local_ip% -a module/network -u low:}%{A}
+format-connected-foreground = ${colors.solarizedYellow}
+format-connected =
+;label-connected = %{A1:dunstify %local_ip% -a module/network -u low:}%{A}
 
-format-disconnected =
+format-disconnected-foreground = ${colors.solarizedYellow}
+format-disconnected = 
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
