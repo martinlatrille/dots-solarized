@@ -29,9 +29,6 @@ alert = #bd2c40
 
 transparent = #00000000
 
-# Bright
-brightGreen = #2eb82e
-
 # Solarized
 solarizedBlack = #002b36
 solarizedRed = #dc322f
