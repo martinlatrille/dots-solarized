@@ -77,9 +77,13 @@ font-4 = Font Awesome 5 Free:style=solid:size=12:antialias=false;0
 font-5 = Font Awesome 5 Free:style=solid:size=9:antialias=false;1
 font-6 = Font Awesome 5 Brands:style=solid:size=9:antialias=false;1
 
-# Fonts for module/alsa and module/spotify
+# Fonts for module/alsa
 font-7 = Font Awesome 5 Free:style=solid:size=8:antialias=false;1
 font-8 = Font Awesome 5 Free:style=regular:size=8:antialias=false;1
+
+# Fonts for module/spotify
+font-9 = Inconsolata for Powerline:style=regular:size=12;0
+font-10 = Font Awesome 5 Free:style=solid:size=8:antialias=false;2
 
 modules-left = i3
 modules-center = date
@@ -423,7 +427,7 @@ menu-2-1-exec = menu-open-0
 type = custom/script
 interval = 0.5
 format = <label>
-exec = python3 /home/mrtn/.config/polybar/modules/spotify.py -p " , " -f '{play_pause} {artist} - {song}' --playpause-font=8
+exec = python3 /home/mrtn/.config/polybar/modules/spotify.py -p " , " -f '{play_pause} {artist} - {song}' --font=10 --playpause-font=11
 click-left = spotifycli --playpause
 click-right = spotifycli --next
 format-padding = 2
