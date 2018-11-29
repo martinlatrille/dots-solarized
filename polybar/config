@@ -79,7 +79,7 @@ font-7 = Font Awesome 5 Free:style=solid:size=8:antialias=false;1
 font-8 = Font Awesome 5 Free:style=regular:size=8:antialias=false;1
 
 # Fonts for module/spotify
-font-9 = Inconsolata for Powerline:style=regular:size=12;0
+font-9 = Helvetica:style=regular:size=12;1
 font-10 = Font Awesome 5 Free:style=solid:size=8:antialias=false;2
 
 modules-left = i3

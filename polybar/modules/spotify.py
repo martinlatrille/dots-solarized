@@ -96,20 +96,23 @@ try:
 
     # Handle main label
 
-    artist = fix_string(metadata['xesam:artist'][0])
-    song = fix_string(metadata['xesam:title'])
+    artist = fix_string(metadata['xesam:artist'][0]) if metadata['xesam:artist'] else ''
+    song = fix_string(metadata['xesam:title']) if metadata['xesam:title'] else ''
 
-    if len(song) > trunclen:
-        song = song[0:trunclen]
-        song += '...' 
-        if ('(' in song) and (')' not in song):
-            song += ')'
-    
-    if font:
-        artist = label_with_font.format(font=font, label=artist)
-        song = label_with_font.format(font=font, label=song)
+    if not artist and not song:
+        print('')
+    else:
+        if len(song) > trunclen:
+            song = song[0:trunclen]
+            song += '...'
+            if ('(' in song) and (')' not in song):
+                song += ')'
 
-    print(output.format(artist=artist, song=song, play_pause=play_pause))
+        if font:
+            artist = label_with_font.format(font=font, label=artist)
+            song = label_with_font.format(font=font, label=song)
+
+        print(output.format(artist=artist, song=song, play_pause=play_pause))
 
 except Exception as e:
     if isinstance(e, dbus.exceptions.DBusException):
